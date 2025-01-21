@@ -1,0 +1,122 @@
+
+.quicksand-normal {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* nav style */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 140px;
+
+    
+    
+}
+.logo{
+    display: flex;
+}
+nav img{
+    width: 62px;
+    height: 62px;
+}
+nav a{
+    text-decoration: none;
+    margin-right: 32px;
+    
+}
+/* main section styles */
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 140px;
+}
+.banner-title{
+    width: 640px;
+    height: 300px; 
+    
+}
+img{
+    width: 100%
+   
+}
+h1{
+    font-weight: bold;
+    font-size: 56px;
+}
+section p{
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 24px;
+}
+.benner-but{
+    background-color: black;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+    padding: 10px 47px;
+    border-radius: 12px;
+    border: none;
+}
+
+
+
+
+/* shared style */
+.orange{
+    color: rgba(254, 163, 1, 1);
+}
+.sky-blue{
+    color: rgba(1, 172, 253, 1);
+}
+.color-3{
+    color: rgba(5, 212, 223, 1);
+}
+.color-4{
+    color: rgba(93, 88, 239, 1);
+}
+.but-color{
+    background-color: rgba(254, 163, 1, 1);
+    font-weight:600px;
+    color: rgba(255, 255, 255, 1);
+    padding: 10px 60.5px;
+    border-radius: 12px;
+    border: none;
+  
+}
+
+/* responsive styles */
+@media screen and (max-width:576px) {
+    nav a,.title,.but-color{
+        display: none;
+    }
+    nav{
+        padding: 12px 16px;
+        box-shadow: 0 0 4px 0 rgba(254, 163, 1, 1);
+    }
+    .menu-ber{
+       display: inline-block;
+    }
+    .ber-1,.ber-2,.ber-3{
+        width: 30px;
+       height: 3px;
+       background-color: black;
+       margin: 6px 0;
+       
+    }
+    section ,.banner-title{
+        margin: auto;
+        width: auto;
+        text-align: center;
+        
+    }
+    .banner {
+        flex-direction: column-reverse;
+    }
+    
+    
+}
