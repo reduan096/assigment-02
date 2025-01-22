@@ -5,67 +5,112 @@
   font-style: normal;
 }
 /* nav style */
-nav {
+.display-flex{
     display: flex;
+}
+
+
+.navber{
     align-items: center;
     justify-content: space-between;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 20px 140px;
-
     
     
-}
-.logo{
-    display: flex;
+    
 }
 nav img{
-    width: 62px;
-    height: 62px;
+    width: 100%;
 }
-nav a{
+.nav-title a{
     text-decoration: none;
     margin-right: 32px;
     
 }
-/* main section styles */
-section{
-    display: flex;
+.navber,.banner{
+    max-width: 1440px;
+    margin: 0 140px;
+}
+/* banner styles */
+.banner{
     align-items: center;
     justify-content: space-between;
-    margin: 0 140px;
+
+ 
+    
 }
 .banner-title{
     width: 640px;
-    height: 300px; 
-    
+    height: 300px;
 }
-img{
-    width: 100%
-   
-}
+
 h1{
     font-weight: bold;
-    font-size: 56px;
+    font-size: 3rem;
 }
-section p{
+p{
     font-weight: 300;
-    font-size: 20px;
-    margin-top: 24px;
+    font-size: 1rem;
+}
+.logo img{
+    width: 80%;
 }
 .benner-but{
     background-color: black;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1rem;
     color: rgba(255, 255, 255, 1);
     padding: 10px 47px;
     border-radius: 12px;
     border: none;
 }
 
+/* main section styles */
+.bg-color{
+        background-image:url(../assets/bg.png);
+    }
+    .bg-color2{
+        background-color: rgba(254, 163, 1, 1);
+    }
+.sec-title{
+    font-size: 2rem;
+    margin-bottom: 60px;
+    text-align: center;
+    }
+.sec-card{
+        display: flex;
+        justify-content: center;
+        gap: 28px;
 
-
-
+    }
+    section{
+        margin: 0,140px;
+    }
+.card-1{
+    background-color: rgba(222, 245, 255, 1);
+    border-radius: 19px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    width: 300px;
+    }
+.card-2{
+    background-color: rgba(255, 244, 220, 1);
+    border-radius: 19px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    width: 300px;
+    }
+.card-3{
+    background-color: rgba(242, 232, 255, 1);
+    border-radius: 19px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    width: 300px;
+}
+section a{
+    text-decoration: none;
+}
 /* shared style */
 .orange{
     color: rgba(254, 163, 1, 1);
@@ -88,13 +133,96 @@ section p{
     border: none;
   
 }
+.carousel-controls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.carousel-btn {
+    background-color: rgba(254, 163, 1, 1);
+    color: #fff;
+    border: none;
+    border-radius: 30%;
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+}
+/* stories styles */
+.stories{
+    padding: 60px 140px;
+    text-align: center;
+
+}
+.stories h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.stories-container{
+    display: flex;
+    gap: 20px;
+
+}
+.s-story{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px; 
+    width: 600px;
+    height: 622px;
+}
+.story-1{
+    width: 600px;
+    height: 622px;
+    background-color: #fff;
+    border-radius: 16px;  
+}
+.story-2{
+    width: 290px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 16px; 
+
+}
+.stories-container img{
+    width: 100%;
+    border-radius: 16px;
+}
+.story-but{
+    background-color: #000;
+    color: #fff;
+    padding: 10px 60px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1rem;
+    margin-top: 90px;
+}
+#date{
+    background-color: #fea301;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    
+}
+#stories-container .date{
+    margin-left: -100px;
+    margin-top:-200px ;
+}
+
+
+
 
 /* responsive styles */
 @media screen and (max-width:576px) {
-    nav a,.title,.but-color{
+    
+    nav a,.title,.but-color,.carousel-controls,.story-1{
         display: none;
     }
+   
+    
     nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         padding: 12px 16px;
         box-shadow: 0 0 4px 0 rgba(254, 163, 1, 1);
     }
@@ -108,15 +236,24 @@ section p{
        margin: 6px 0;
        
     }
-    section ,.banner-title{
-        margin: auto;
-        width: auto;
-        text-align: center;
-        
-    }
-    .banner {
+    .banner{
         flex-direction: column-reverse;
     }
-    
-    
+    .banner-title{
+        width: 357px;
+        height: 252px;
+        text-align: center;
+    }
+    h1{
+        font-size: 2rem;
+    }
+  
+   .sec-card{
+    flex-direction: column;
+   }
+    .story-2{
+    width:100%;
+   }
+
 }
+                               
