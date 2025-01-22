@@ -207,6 +207,34 @@ section a{
     margin-left: -100px;
     margin-top:-200px ;
 }
+/* footer styles */
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 140px;
+}
+.footer-section1{
+    display: flex;
+}
+.footer-section1 img{
+    width: 82px;
+    height: 82px;
+}
+.footer{
+    background-color: rgba(1, 172, 253, 1);
+}
+ul li{
+    list-style: none;
+
+}
+ ul li a{
+    list-style: none;
+    text-decoration: none;
+    
+}
+.text-color{
+    color: rgba(255, 255, 255, 1);
+}
 
 
 
@@ -248,7 +276,7 @@ section a{
         font-size: 2rem;
     }
   
-   .sec-card{
+   .sec-card,.footer-container{
     flex-direction: column;
    }
     .story-2{
